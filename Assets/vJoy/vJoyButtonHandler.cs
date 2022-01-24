@@ -8,25 +8,29 @@ public class vJoyButtonHandler : XRBaseInteractable
 
     public Material SensorOnMaterial;
     public Material SensorOffMaterial;
-
-    private MeshRenderer sensorLight;
+    public MeshRenderer SensorLight;
 
     public void Start()
     {
         JoystickController = FindObjectOfType<vJoyController>();
-        sensorLight = GetComponent<MeshRenderer>();
-        sensorLight.material = SensorOffMaterial;
+
+        if (SensorLight == null) {
+            SensorLight = GetComponent<MeshRenderer>();
+        }
+
+        SensorLight.material = SensorOffMaterial;
     }
 
     public void OnHoverEnterEvent(XRBaseInteractor interactor)
     {
-        sensorLight.material = SensorOnMaterial;
+        Debug.Log("Entered zone");
+        SensorLight.material = SensorOnMaterial;
         JoystickController.SetButton(ButtonId, true);
     }
 
     public void OnHoverExitEvent(XRBaseInteractor interactor)
     {
         JoystickController.SetButton(ButtonId, false);
-        sensorLight.material = SensorOffMaterial;
+        SensorLight.material = SensorOffMaterial;
     }
 }

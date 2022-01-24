@@ -25,3 +25,9 @@ This has only been tested with an Oculus Rift S headset.
 
 #### DanceManiax
 - https://www.youtube.com/watch?v=-tT7i3TTLMw
+
+
+
+## Thanks
+- vJoy (http://vjoystick.sourceforge.net/)
+- SuperSimpleTcp (https://github.com/jchristn/SuperSimpleTcp/)
