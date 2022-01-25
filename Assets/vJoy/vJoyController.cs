@@ -225,7 +225,7 @@ public class vJoyController : MonoBehaviour
         }
 
         // Individual button presses
-        for (int i = 10; i < 16; i++)
+        for (int i = 10; i < 32; i++)
         {
             joystick.SetBtn(((buttons >> i) & 1) != 0, id, (uint)(i - 10 + 5));
         }
