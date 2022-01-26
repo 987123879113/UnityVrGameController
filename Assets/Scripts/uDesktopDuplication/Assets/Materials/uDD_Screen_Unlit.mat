@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: uDD_Screen_Unlit
   m_Shader: {fileID: 4800000, guid: 2ca7b38c676bddd439a77a646a279a54, type: 3}
-  m_ShaderKeywords: INVERT_X _CULL_BACK _EMISSION _FORWARD_Y _USEBEND_ON
+  m_ShaderKeywords: _CULL_BACK _EMISSION _FORWARD_Y _USEBEND_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,7 +31,7 @@ Material:
     - <noninit>: 0
     - _Bend: 0
     - _ColorScale: 1
-    - _Cull: 2
+    - _Cull: 1
     - _Forward: 0
     - _Radius: 30
     - _Thickness: 1
