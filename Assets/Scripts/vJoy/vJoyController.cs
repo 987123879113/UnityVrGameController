@@ -204,21 +204,21 @@ public class vJoyController : MonoBehaviour
                 if (inputDevice.characteristics.HasFlag(InputDeviceCharacteristics.Left))
                 {
                     // Left arrow
-                    inputDevice.IsPressed(InputHelpers.Button.PrimaryButton, out button);
+                    UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(inputDevice, UnityEngine.XR.Interaction.Toolkit.InputHelpers.Button.PrimaryButton, out button);
                     joystick.SetBtn(button, id, 1);
 
                     // X button
-                    inputDevice.IsPressed(InputHelpers.Button.SecondaryButton, out button);
+                    UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(inputDevice, UnityEngine.XR.Interaction.Toolkit.InputHelpers.Button.SecondaryButton, out button);
                     joystick.SetBtn(button, id, 3);
                 }
                 else if (inputDevice.characteristics.HasFlag(InputDeviceCharacteristics.Right))
                 {
                     // Right arrow
-                    inputDevice.IsPressed(InputHelpers.Button.PrimaryButton, out button);
+                    UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(inputDevice, UnityEngine.XR.Interaction.Toolkit.InputHelpers.Button.PrimaryButton, out button);
                     joystick.SetBtn(button, id, 2);
 
                     // O button
-                    inputDevice.IsPressed(InputHelpers.Button.SecondaryButton, out button);
+                    UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(inputDevice, UnityEngine.XR.Interaction.Toolkit.InputHelpers.Button.SecondaryButton, out button);
                     joystick.SetBtn(button, id, 4);
                 }
             }
